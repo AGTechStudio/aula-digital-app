@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AulaDigital"
+        tools:targetApi="31">
+
+        <!-- Login -->
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Registro -->
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+
+        <!-- Principal -->
+        <activity android:name=".MainActivity" android:exported="false"/>
+
+        <!-- Gestión de Alumnos -->
+        <activity android:name=".AlumnosActivity" android:exported="false"/>
+        <activity android:name=".PerfilAlumnoActivity" android:exported="false"/>
+        <activity android:name=".AgregarAlumnoActivity" android:exported="false"/>
+        <activity android:name=".EditarAlumnoActivity" android:exported="false"/>
+        <activity android:name=".EditarTelefonosActivity" android:exported="false"/>
+        <activity android:name=".AgregarAnotacionActivity" android:exported="false"/>
+        <activity android:name=".DetalleAlumnoActivity" android:exported="false"/>
+
+        <!-- Otras funcionalidades -->
+        <activity android:name=".MeriendasActivity" android:exported="false"/>
+        <activity android:name=".PlanificacionesActivity" android:exported="false"/>
+        <activity android:name=".AsistenciaActivity" android:exported="false"/>
+
+        <!-- ENTREVISTAS -->
+        <activity android:name=".EntrevistasActivity" android:exported="false"/>
+        <activity android:name=".AgregarEditarEntrevistaActivity" android:exported="false"/>
+        <activity android:name=".DetalleEntrevistaActivity" android:exported="false"/>
+        <activity android:name=".ListadoEntrevistasActivity" android:exported="false"/>
+        <activity android:name=".ProximasEntrevistasActivity" android:exported="false"/>
+        <activity android:name=".EntrevistasRealizadasActivity" android:exported="false"/>
+
+        <!-- Bitácora -->
+        <activity android:name=".BitacoraActivity" android:exported="false"/>
+        <activity android:name=".AgregarObservacionActivity" android:exported="false"/>
+        <activity android:name=".DetalleObservacionActivity" android:exported="false"/>
+
+        <!-- FileProvider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>
