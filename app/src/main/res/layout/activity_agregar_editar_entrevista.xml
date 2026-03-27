@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fondoPastel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="➕ Agendar / Editar Entrevista"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/amarilloOscuro"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"/>
+
+        <TextView android:text="Fecha:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etFechaEntrevista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="@drawable/borde_edittext"/>
+
+        <TextView android:text="Hora (Ej: 10:30)"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etHoraEntrevista"
+            android:hint="Ej: 10:30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_edittext"/>
+
+        <TextView android:text="Detalle (Alumno o motivo)"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etDetalleEntrevista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_edittext"/>
+
+        <TextView android:text="Resultado (Opcional)"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etResultadoEntrevista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_edittext"/>
+
+        <Button
+            android:id="@+id/btnCargarFoto"
+            android:text="📷 Cargar Foto Acta (Opcional)"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/amarilloOscuro"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivFotoActa"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:background="@color/blanco"/>
+
+        <Button
+            android:id="@+id/btnGuardarEntrevista"
+            android:text="💾 Guardar Entrevista"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/naranjaPastel"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+

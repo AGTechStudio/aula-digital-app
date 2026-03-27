@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cursos_array">
+        <item>4to A</item>
+        <item>4to B</item>
+        <item>5to A</item>
+        <item>5to B</item>
+        <!-- Agrega aquí los cursos que necesites -->
+    </string-array>
+</resources>

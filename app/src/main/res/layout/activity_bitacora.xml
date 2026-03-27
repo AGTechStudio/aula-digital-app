@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fondoPastel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Bitácora Diaria"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/amarilloOscuro"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"/>
+
+    <!-- Campo de búsqueda -->
+    <EditText
+        android:id="@+id/etBuscarObservacion"
+        android:hint="Buscar observación por título"
+        android:background="@drawable/borde_edittext"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Botón agregar observación -->
+    <Button
+        android:id="@+id/btnAgregarObservacion"
+        android:text="➕ Agregar Observación"
+        android:textStyle="bold"
+        android:backgroundTint="@color/naranjaPastel"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Lista de observaciones -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvObservaciones"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

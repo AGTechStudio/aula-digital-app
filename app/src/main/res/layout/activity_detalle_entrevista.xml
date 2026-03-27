@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fondoPastel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="📝 Detalle Entrevista"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/amarilloOscuro"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:hint="Fecha (AAAA-MM-DD)"
+            android:background="@drawable/borde_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etHora"
+            android:hint="Hora (HH:MM)"
+            android:background="@drawable/borde_edittext"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etDetalle"
+            android:hint="Detalle"
+            android:background="@drawable/borde_edittext"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etResultado"
+            android:hint="Resultado (Opcional)"
+            android:background="@drawable/borde_edittext"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:src="@drawable/imagen_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/borde_edittext"/>
+
+        <Button
+            android:id="@+id/btnCargarFoto"
+            android:text="📷 Cargar o Cambiar Foto"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/naranjaPastel"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:text="💾 Guardar Cambios"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/amarilloOscuro"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

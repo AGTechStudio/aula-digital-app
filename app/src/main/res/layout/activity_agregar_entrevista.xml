@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fondoPastel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="➕ Agregar Entrevista"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/amarilloOscuro"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:hint="Fecha (AAAA-MM-DD)"
+            android:inputType="date"
+            android:background="@drawable/borde_amarillo"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etHora"
+            android:hint="Hora (HH:MM)"
+            android:inputType="time"
+            android:background="@drawable/borde_amarillo"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etDetalle"
+            android:hint="Detalle"
+            android:background="@drawable/borde_amarillo"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etResultado"
+            android:hint="Resultado (opcional)"
+            android:background="@drawable/borde_amarillo"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/ivFotoActa"
+            android:src="@drawable/imagen_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/borde_amarillo"/>
+
+        <Button
+            android:id="@+id/btnSubirFoto"
+            android:text="📷 Subir Foto Acta"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/naranjaPastel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="💾 Guardar Entrevista"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/amarilloOscuro"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+

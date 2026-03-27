@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/tvFechaObservacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FF8C00"/>
+
+    <TextView
+        android:id="@+id/tvDescripcionObservacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción de la observación"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    <ImageButton
+        android:id="@+id/btnEliminarObservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Eliminar"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>
+
+

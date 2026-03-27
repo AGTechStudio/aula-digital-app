@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPastel"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:text="¡Bienvenido al Aula Digital!"
+            android:textSize="22sp"
+            android:textColor="@color/amarilloOscuro"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAlumnos"
+            android:text="👨 Gestión de Alumnos"
+            style="@style/BotonMenu" />
+
+        <Button
+            android:id="@+id/btnMeriendas"
+            android:text="🍪 Merienda compartida"
+            style="@style/BotonMenu" />
+
+        <Button
+            android:id="@+id/btnPlanificaciones"
+            android:text="📄 Planificaciones"
+            style="@style/BotonMenu" />
+
+        <Button
+            android:id="@+id/btnBitacora"
+            android:text="📝 Bitácora Diaria"
+            style="@style/BotonMenu" />
+
+        <Button
+            android:id="@+id/btnEntrevistas"
+            android:text="📅 Entrevistas"
+            style="@style/BotonMenu" />
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:text="🚪 Cerrar sesión"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF7043"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
